@@ -2,7 +2,7 @@
 
 ## General Definition
 
-`Method overloading` is a form of polymorphism in OOP. Polymorphism allows objects or methods to act in different ways, according to the means in which they are used. One such manner in which the methods behave according to their *argument types and number of arguments* is method overloading
+`Method/Funtion overloading` is a form of polymorphism in OOP. Polymorphism allows objects or methods to act in different ways, according to the means in which they are used. One such manner in which the methods behave according to their *argument types and number of arguments* is method overloading
 
 ## Python and Overloading
 First, one needs to understand the concept of overloading and why it's not applicable to Python.
