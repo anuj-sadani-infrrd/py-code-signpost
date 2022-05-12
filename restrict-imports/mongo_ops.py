@@ -26,7 +26,9 @@ class _MongoOperations:
         # The class defines the actual operations
         @_deco_class_attributes
         def find(self):
-            print(f"Finding in MongoDB collection:{self.collection}\nquery:{self.query}")
+            print(
+                f"Finding in MongoDB collection:{self.collection}\nquery:{self.query}"
+            )
 
         @_deco_class_attributes
         def insert(self):
@@ -34,7 +36,9 @@ class _MongoOperations:
 
         @_deco_class_attributes
         def update(self):
-            print(f"Update in MongoDB collection:{self.collection}\nquery:{self.query}\ndata:{self.data}")
+            print(
+                f"Update in MongoDB collection:{self.collection}\nquery:{self.query}\ndata:{self.data}"
+            )
 
     class PublicOps:
         # Class acting as an interface to the private class
@@ -52,4 +56,3 @@ class _MongoOperations:
 
 
 ops = _MongoOperations.PublicOps(_MongoOperations)
-
