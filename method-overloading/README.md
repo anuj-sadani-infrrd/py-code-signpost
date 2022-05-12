@@ -1,4 +1,4 @@
-# Method overloading in python
+# Function overloading in python
 
 ## General Definition
 
