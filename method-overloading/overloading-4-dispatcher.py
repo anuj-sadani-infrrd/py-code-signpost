@@ -5,6 +5,8 @@ from functools import singledispatch
 To define a generic function, decorate it with the @singledispatch decorator. When defining a 
 function using @singledispatch, note that the dispatch happens on the type of the first argument.
 """
+
+
 @singledispatch
 def func_1(name, number):
     print(f"I am func_1 with name:{name} and number:{number}")
@@ -15,6 +17,8 @@ To add overloaded implementations to the function, use the register() attribute 
 function, which can be used as a decorator. For functions annotated with types, the decorator 
 will infer the type of the first argument automatically.
 """
+
+
 @func_1.register(int)
 def _(number):
     print(f"I am register to func_1 with number:{number}")
